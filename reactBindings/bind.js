@@ -30,6 +30,7 @@ function bind(ComponentToBind) {
 
         componentWillUnmount() {
             this.unsubscribe();
+            console.log('Unmounting')
         }
 
     render() {
