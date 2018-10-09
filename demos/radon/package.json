@@ -18,7 +18,7 @@
     "radon-js": "^3.2.16",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-radon": "^1.0.12",
+    "react-radon": "^1.0.13",
     "webpack": "^4.19.0"
   },
   "devDependencies": {
