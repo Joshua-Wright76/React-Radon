@@ -1,5 +1,5 @@
 import React from 'react';
-import {bind} from 'react-radon';
+import {bindToSilo} from 'react-radon';
 
 class MarketCreator extends React.Component {
   render() { 
@@ -16,4 +16,4 @@ class MarketCreator extends React.Component {
   }
 }
 
-export default bind(MarketCreator);
+export default bindToSilo(MarketCreator);

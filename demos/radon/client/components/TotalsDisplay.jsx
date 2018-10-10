@@ -1,5 +1,5 @@
 import React from 'react';
-import {bind} from 'react-radon';
+import {bindToSilo} from 'react-radon';
 
 class TotalsDisplay extends React.Component{
   render() {
@@ -12,4 +12,4 @@ class TotalsDisplay extends React.Component{
     </div>);
   }
 }
-export default bind(TotalsDisplay);
+export default bindToSilo(TotalsDisplay);

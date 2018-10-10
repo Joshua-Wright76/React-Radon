@@ -15,10 +15,10 @@
     "path": "^0.12.7",
     "prop-types": "^15.6.2",
     "radon-devtool": "^1.0.11",
-    "radon-js": "^3.2.16",
+    "radon-js": "^3.3.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-radon": "^1.0.12",
+    "react-radon": "^1.0.15",
     "webpack": "^4.19.0"
   },
   "devDependencies": {

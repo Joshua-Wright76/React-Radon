@@ -1,6 +1,6 @@
 import React from 'react';
 import MarketDisplay from './MarketDisplay.jsx';
-import {bind} from 'react-radon';
+import {bindToSilo} from 'react-radon';
 
 const MarketsDisplay = (props) => {
 
@@ -12,4 +12,4 @@ const MarketsDisplay = (props) => {
   );
 };
 
-export default bind(MarketsDisplay);
+export default bindToSilo(MarketsDisplay);

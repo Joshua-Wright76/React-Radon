@@ -1,5 +1,5 @@
 import React from 'react';
-import {bind} from 'react-radon';
+import {bindToSilo} from 'react-radon';
 
 const MarketDisplay = (props) => (
   <div>
@@ -8,4 +8,4 @@ const MarketDisplay = (props) => (
   </div>
 );
 
-export default bind(MarketDisplay);
+export default bindToSilo(MarketDisplay);

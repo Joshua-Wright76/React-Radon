@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MarketCreator from '../components/MarketCreator.jsx'
 import MarketsDisplay from '../components/MarketDisplay.jsx'
 import Market from '../components/Market.jsx';
-import {bind, objectBind} from 'react-radon';
+import {bindToSilo, bindObjectToSilo} from 'react-radon';
 
 class MarketsContainer extends Component {
   constructor(props) {
@@ -40,7 +40,7 @@ class MarketsContainer extends Component {
       let marketData = this.props.val.marketList.val;
 
       for(let i in marketData){
-        let ArrMarket = objectBind(Market, i, this.props.val.marketList);
+        let ArrMarket = bindObjectToSilo(Market, i, this.props.val.marketList);
         markets.push(<ArrMarket key={i} i={i} addCard={this.addCard} deleteCard={this.deleteCard}/>)
       }
       
@@ -55,4 +55,4 @@ class MarketsContainer extends Component {
   }
 }
 
-export default bind(MarketsContainer);
+export default bindToSilo(MarketsContainer);

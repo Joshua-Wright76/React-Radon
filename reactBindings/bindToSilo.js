@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'; 
 
-function bind(ComponentToBind) {
+function bindToSilo(ComponentToBind) {
     class WrapperFunction extends React.Component {
         constructor() {
             super();
@@ -63,4 +63,4 @@ function bind(ComponentToBind) {
   return WrapperFunction;
 }
 
-export default bind;
+export default bindToSilo;

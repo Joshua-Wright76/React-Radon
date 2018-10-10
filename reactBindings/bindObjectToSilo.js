@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // siloObject is passed in to have access to keySubscribe function
-function objectBind(ComponentToBind, key, siloObject) {
+function bindObjectToSilo(ComponentToBind, key, siloObject) {
   class WrapperFunction extends React.Component {
     constructor() {
       super();
@@ -39,4 +39,4 @@ function objectBind(ComponentToBind, key, siloObject) {
   return WrapperFunction;
 }
 
-export default objectBind;
+export default bindObjectToSilo;
